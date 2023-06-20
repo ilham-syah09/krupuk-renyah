@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jun 20, 2023 at 04:33 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.4.14
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 20 Jun 2023 pada 04.47
+-- Versi server: 10.4.11-MariaDB
+-- Versi PHP: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_kerupuk`
+-- Database: `db_krupuk`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sensor`
+-- Struktur dari tabel `sensor`
 --
 
 CREATE TABLE `sensor` (
@@ -35,17 +36,16 @@ CREATE TABLE `sensor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `sensor`
+-- Dumping data untuk tabel `sensor`
 --
 
 INSERT INTO `sensor` (`id`, `suhu`, `status`, `date`) VALUES
-(1, 30, 'ON', '2023-06-20 02:32:31'),
-(2, 40, 'OFF', '2023-06-20 02:32:46');
+(1, 20, 'ON', '2023-05-30 15:29:03');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `setting`
+-- Struktur dari tabel `setting`
 --
 
 CREATE TABLE `setting` (
@@ -54,16 +54,16 @@ CREATE TABLE `setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `setting`
+-- Dumping data untuk tabel `setting`
 --
 
 INSERT INTO `setting` (`id`, `setSuhu`) VALUES
-(1, 34);
+(1, 30);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -75,7 +75,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `username`, `image`, `password`) VALUES
@@ -86,41 +86,41 @@ INSERT INTO `user` (`id`, `name`, `username`, `image`, `password`) VALUES
 --
 
 --
--- Indexes for table `sensor`
+-- Indeks untuk tabel `sensor`
 --
 ALTER TABLE `sensor`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `setting`
+-- Indeks untuk tabel `setting`
 --
 ALTER TABLE `setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `sensor`
+-- AUTO_INCREMENT untuk tabel `sensor`
 --
 ALTER TABLE `sensor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `setting`
+-- AUTO_INCREMENT untuk tabel `setting`
 --
 ALTER TABLE `setting`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;

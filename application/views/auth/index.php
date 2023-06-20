@@ -27,10 +27,10 @@
                         <div class="login-brand">
                             <!-- IMAGE HERE -->
                             <img src="<?= base_url('assets/img/phb.png'); ?>" width="150" alt="">
-                            <h6 class="mt-2">Sistem Monitoring Pengering Udang</h6>
+                            <h6 class="mt-2">Sistem Monitoring Pengering Krupuk</h6>
                         </div>
 
-                        <div class="card card-danger">
+                        <div class="card card-primary">
                             <div class="text-center card-header">
                                 <h4>Login</h4>
                             </div>
