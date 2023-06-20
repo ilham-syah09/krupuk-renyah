@@ -18,8 +18,22 @@ class Alat extends CI_Controller
 		$this->db->order_by('id', 'desc');
 		$dataLama = $this->db->get('sensor', 1)->row();
 
-		if ($dataLama->suhu == $suhu) {
-			echo 'Data masih sama';
+		if ($dataLama) {
+			if ($dataLama->suhu == $suhu) {
+				echo 'Data masih sama';
+			} else {
+				$data = [
+					'suhu' => $suhu,
+					'status' => $status
+				];
+
+				$insert = $this->db->insert('sensor', $data);
+				if ($insert) {
+					echo 'Data berhasil disimpan';
+				} else {
+					echo 'Server Error!';
+				}
+			}
 		} else {
 			$data = [
 				'suhu' => $suhu,
