@@ -9,7 +9,7 @@ HTTPClient http;
 WiFiClient client;
 #define USE_SERIAL Serial
 
-String host = "http://192.168.181.7/kerupuk/alat";
+String host = "http://192.168.9.185/krupuk-renyah/alat";
 String urlSimpanData = host + "/simpanData?suhu=";
 String urlGetSuhu = host + "/getSetting";
 
@@ -32,7 +32,7 @@ float suhu = 0;
 
 char c;
 String data, statusKipas, statusHeater;
-int suhuSetting = 30;
+int suhuSetting = 70;
 
 #define pinKipas D5
 #define pinHeater D6

@@ -22,7 +22,7 @@
                                                 #
                                             </th>
                                             <th>Suhu</th>
-                                            <th>Status Kipas</th>
+                                            <!-- <th>Status Kipas</th> -->
                                             <th>Tanggal</th>
                                             <th>Action</th>
                                         </tr>
@@ -33,7 +33,7 @@
                                             <tr>
                                                 <td><?= $i++; ?></td>
                                                 <td><?= $m->suhu; ?></td>
-                                                <td><?= $m->status; ?></td>
+                                                <!-- <td><?= $m->status; ?></td> -->
                                                 <td><?= $m->date; ?></td>
                                                 <td><a href="" class="badge badge-danger">Hapus</a></td>
                                             </tr>
